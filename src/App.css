@@ -1,0 +1,46 @@
+/* Reset and full-page setup */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Galaxy background container */
+.galaxy-bg {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 250vw;
+  height: 250vh;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(ellipse at center, #0b0f23 0%, #000000 90%);
+  overflow: hidden;
+  z-index: 0;
+}
+
+/* Individual star style */
+.star {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.6;
+  filter: drop-shadow(0 0 4px #fff);
+}
+
+/* Auth container wrapper to center content over background */
+.auth-wrapper {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  color: white;
+}
